@@ -2,5 +2,8 @@
 console.log("Hello World");
 
 $(function() {
-    $("body").append("<b>Hello World!</b>");
+    chrome.storage.sync.get("greeting", function (greeting) {
+        $("body").append(greeting["greeting"]);
+        console.log(greeting);
+    });
 });
