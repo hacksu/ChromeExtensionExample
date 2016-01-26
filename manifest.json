@@ -7,7 +7,7 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["helloWorld.js"]
+      "js": ["jquery-1.11.3.min.js", "helloWorld.js"]
     }
   ]
 }
