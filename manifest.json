@@ -1,3 +1,4 @@
+// https://developer.chrome.com/extensions/manifest
 {
   "manifest_version": 2,
 
@@ -9,5 +10,9 @@
       "matches": ["*://*/*"],
       "js": ["jquery-1.11.3.min.js", "helloWorld.js"]
     }
-  ]
+  ],
+
+  "browser_action": {
+    "default_popup": "browserAction.html"
+  }
 }
